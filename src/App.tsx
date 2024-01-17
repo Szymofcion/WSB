@@ -1,13 +1,10 @@
-import Background from "./ui/Background";
-
-import "./App.scss";
-import Form from "./ui/Form";
+import Main from "./components/Main";
 
 function App() {
   return (
-    <div className="container">
-      <Background />;
-      <Form/>
+    <div>
+      
+      <Main />;
     </div>
   );
 }

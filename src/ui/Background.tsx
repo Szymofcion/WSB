@@ -5,7 +5,7 @@ function Background() {
   const wrapperRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const divElements: HTMLDivElement[] = Array.from({ length: 70 }, () => {
+    const divElements: HTMLDivElement[] = Array.from({ length: 50 }, () => {
       const div = document.createElement("div");
       div.className = "container__card";
       div.style.color = "blueviolet";
@@ -35,7 +35,7 @@ function Background() {
     };
   }, []);
 
-  return <div className="container" ref={wrapperRef}></div>;
+  return <div className="container" ref={wrapperRef} id="main"></div>;
 }
 
 export default Background;
